@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language:     F*
 " Filenames:    *.fst
-" Maintainers:  Michael Lowell Roberts <mirobert at microsoft dot com>
-" URL:          http://research.microsoft.com/en-us/projects/fstar/
+" Maintainers:  Taku Kitamura <takukitamura.io@gmail.com>
+" URL:          https://takukitamura.com
 "
 " Based on the ocaml.vim syntax file distributed with Vim.
 " Distributed under the VIM LICENSE. Please refer to the LICENSE file or
