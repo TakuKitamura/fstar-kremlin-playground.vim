@@ -1,12 +1,12 @@
 
 scriptencoding utf-8
 
-function! VerifyFstar()
+function! VerifyFStar()
   let currentFileFullPath = expand("%:p")
   echo system ('~/.vim/plugged/fstar-kremlin-playground.vim/plugin/fstarHelper.bash -v ' . currentFileFullPath)
 endfunction
 
-function! ExecFstar()
+function! ExecFStar()
   let currentFileFullPath = expand("%:p")
   echo system ('~/.vim/plugged/fstar-kremlin-playground.vim/plugin/fstarHelper.bash -e ' . currentFileFullPath)
 endfunction
@@ -23,7 +23,7 @@ function! ExecLowStar()
 
 endfunction
 
-command! VerifyFstar call VerifyFstar()
-command! ExecFstar call ExecFstar()
+command! VerifyFStar call VerifyFStar()
+command! ExecFStar call ExecFStar()
 command! VerifyLowStar call VerifyLowStar()
 command! ExecLowStar call ExecLowStar()
