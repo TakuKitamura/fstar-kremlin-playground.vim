@@ -22,7 +22,11 @@ call plug#begin()
 Plug 'TakuKitamura/fstar-kremlin-playground.vim'
 call plug#end()
 #...
-$ vim -c PlugInstall -c q -c q
+```
+
+### プラグインをUpdateする場合
+```sh
+$ vim -c PlugUpdate -c q -c q 
 ```
 
 ### コマンド一覧
@@ -32,3 +36,7 @@ $ vim -c PlugInstall -c q -c q
 :VerifyLowStar "vim で開いている､LowStarプログラムの検証を行う
 :ExecLowStar "vim で開いている､LowStarプログラムの検証と実行を行う｡
 ```
+
+### 注意点
+F*ファイルが一つのみで､実行可能なもののみ対応しています｡
+F*ファイルが複数の場合や､外部からC言語関数を入力として与える場合は､自分でmakeファイルを作成して実行してください｡
