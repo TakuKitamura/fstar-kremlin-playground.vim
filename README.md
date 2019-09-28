@@ -4,6 +4,10 @@ vimで開いている､F*とLowStarプログラムの検証と実行を行え�
 highlighter関連のファイルは､こちらの方から､お借りしました｡
 https://github.com/FStarLang/VimFStar/blob/master/syntax/fstar.vim
 
+### 動作確認
+- Ubuntu18.04
+- macOS Catalina 
+
 ### 依存ツール
 - vim: https://github.com/vim/vim
 - vim-plug: https://github.com/junegunn/vim-plug
@@ -38,13 +42,18 @@ $ vim -c PlugUpdate -c q -c q
 ```
 ### 例
 ```sh
-# vi add.fst
-# cat add.fst
+$ vi add.fst
+$ cat add.fst
 module Add
 let a = 1 + 1
-# vi add.fst
+$ vi add.fst
 :w # vimコマンドで書き込み
 :VerifyFStar # vimコマンドで検証
+[Verify Fstar]
+Verified module: Add
+All verification conditions discharged successfully
+
+続けるにはENTERを押すかコマンドを入力してください
 ```
 
 ### 注意点
